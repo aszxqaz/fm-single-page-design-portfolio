@@ -28,6 +28,7 @@ This is a solution to the [Single-page design portfolio challenge on Frontend Me
 
 - HTML
 - CSS
+- Swiper
 
 ## Author
 
