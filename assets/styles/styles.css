@@ -1,0 +1,29 @@
+@import "./modules/modules.css";
+@import "./components/components.css";
+@import "./sections/sections.css";
+
+:root {
+  --section-margin: 4rem;
+
+  @media screen and (min-width: 48em) {
+    --section-margin: 5rem;
+  }
+
+  @media screen and (min-width: 90em) {
+    --section-margin: 7.5rem;
+  }
+}
+
+header,
+footer,
+section {
+  margin-block: var(--section-margin);
+}
+
+header {
+  margin-block-start: 0;
+}
+
+footer {
+  margin-block-end: 0;
+}

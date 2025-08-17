@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Single-page design portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top spaced">
+        <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+        <button class="button inverted">Free Consultation</button>
+      </div>
+      <div class="header__body">
+        <h2 class="header__heading heading heading--1">Design solutions made easy</h2>
+        <p class="header__text">With over ten years of experience in various design disciplines, I’m your one-stop shop
+          for your design
+          needs.
+        </p>
+      </div>
+      <ul class="solutions-grid color-0">
+        <li class="solutions-grid__item span-x-2 span-y-2 bg-blue">
+          <h3 class="solutions-grid__heading heading heading--3">Graphics Design</h3>
+          <img class="solutions-grid__image" src="./assets/images/pattern-graphic-design.svg" />
+        </li>
+        <li class="solutions-grid__item bg-orange">
+          <h3 class="solutions-grid__heading heading heading--3">UI/UX</h3>
+          <img class="solutions-grid__image" src="./assets/images/pattern-ui-ux.svg" />
+        </li>
+        <li class="solutions-grid__item bg-pink">
+          <h3 class="solutions-grid__heading heading heading--3">Apps</h3>
+          <img class="solutions-grid__image" src="./assets/images/pattern-apps.svg" />
+        </li>
+        <li class="solutions-grid__item span-x-2 bg-red">
+          <h3 class="solutions-grid__heading heading heading--3">Illustrations</h3>
+          <img class="solutions-grid__image" src="./assets/images/pattern-illustrations.svg" />
+        </li>
+        <li class="solutions-grid__item span-x-2 bg-cyan">
+          <h3 class="solutions-grid__heading heading heading--3">Photography</h3>
+          <img class="solutions-grid__image" src="./assets/images/pattern-photography.svg" />
+        </li>
+        <li class="solutions-grid__item span-x-2 bg-purple">
+          <h3 class="solutions-grid__heading heading heading--3">Motion Graphics</h3>
+          <img class="solutions-grid__image" src="./assets/images/pattern-motion-graphics.svg" />
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="contents">
+    <section class="greeting">
+      <div class="container">
+        <div class="greeting__group">
+          <img class="greeting__image" src="./assets/images/image-amy.webp" alt="Amy photo" />
+          <div class="greeting__group-body">
+            <h2 class="greeting__heading heading heading--2">I’m Amy, and I’d love to work on your next project</h2>
+            <p class="greeting__text">I love working with others to create beautiful design solutions. I’ve designed
+              everything from brand
+              illustrations to complete mobile apps. I’m also handy with a camera!</p>
+            <button class="greeting__button button">Free Consultation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works">
+      <h2 class="works__heading heading heading--2">My Work</h2>
+      <div class="works__swiper">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/image-slide-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/image-slide-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/image-slide-3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/image-slide-4.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="works__slide-btn-group">
+        <button id="slide-btn-prev" class="slide-btn inverted">
+          <img src="./assets/images/icon-arrow-left.svg" alt="Slide back" />
+        </button>
+        <button id="slide-btn-next" class="slide-btn inverted">
+          <img src="./assets/images/icon-arrow-right.svg" alt="Slide back" />
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__group inverted">
+        <div class="footer__group-body">
+          <h2 class="footer__heading heading heading--2">Book a call with me</h2>
+          <p class="footer__text">I’d love to have a chat to see how I can help you. The best first step is for us to
+            discuss your project during a free consultation. Then we can move forward from there.</p>
+        </div>
+        <button class="footer__button button">Free Consultation</button>
+      </div>
+      <div class="footer__top spaced">
+        <img class="logo" src="./assets/images/logo.svg" alt="logo" />
+        <button class="button inverted">Free Consultation</button>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.header {
+}
+
+.header__top {
+  margin-top: clamp(1.5rem, 1rem + 1.19vw, 2rem);
+}
+
+.header__body {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1.25rem;
+
+  margin-block: clamp(2.5rem, 1rem + 6.107vw, 4rem);
+
+  @media screen and (min-width: 48em) {
+    margin-block: clamp(4rem, 3rem + 4.07vw, 5rem);
+  }
+}
+
+.header__text {
+  max-width: 35.5rem;
+}

@@ -1,0 +1,39 @@
+.swiper-slide {
+  width: clamp(16.875rem, 0.773rem + 68.7vw, 33.75rem);
+}
+
+.swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  height: clamp(11.25rem, 0.515rem + 45.8vw, 22.5rem) !important;
+}
+
+.works__heading {
+  margin-block-end: 3rem;
+  text-align: center;
+}
+
+.works__slide-btn-group {
+  margin-block-start: 3rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.slide-btn {
+  border: 0px solid transparent;
+  border-radius: 50%;
+  width: clamp(3rem, 2.0458rem + 4.07125vw, 4rem);
+  aspect-ratio: 1;
+
+  display: grid;
+  place-items: center;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}

@@ -1,0 +1,38 @@
+.footer {
+  margin-block-end: clamp(1.5rem, 0.5458rem + 4.071vw, 2.5rem);
+
+  @media screen and (min-width: 90em) {
+    margin-block-end: clamp(2.5rem, 0.7857rem + 3.5714vw, 4rem);
+  }
+}
+
+.footer__group {
+  padding-block: clamp(2.5rem, 1.069rem + 6.107vw, 4rem);
+  padding-inline: clamp(1rem, -2.936rem + 16.794vw, 5.125rem);
+  margin-block-end: clamp(2rem, 1.046rem + 4.07vw, 3rem);
+
+  border-radius: 0.625rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+
+  @media screen and (min-width: 90em) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__group-body {
+  max-width: 33.75rem;
+  text-align: center;
+
+  @media screen and (min-width: 90em) {
+    text-align: start;
+  }
+}
+
+.footer__heading {
+  margin-block-end: 1.5rem;
+}

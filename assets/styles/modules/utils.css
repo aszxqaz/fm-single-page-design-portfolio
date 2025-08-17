@@ -1,0 +1,21 @@
+.container {
+  --max-width: 69.375rem;
+  --padding-inline: clamp(1rem, 0.046rem + 4.071vw, 2rem);
+
+  margin-inline: auto;
+  max-width: min(var(--max-width), 100% - 2 * var(--padding-inline));
+
+  @media screen and (min-width: 48em) {
+    --padding-inline: clamp(2rem, -7.143rem + 19.0476vw, 10rem);
+  }
+}
+
+.spaced {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contents {
+  display: contents;
+}

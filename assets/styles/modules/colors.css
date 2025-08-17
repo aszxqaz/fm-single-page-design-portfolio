@@ -1,0 +1,116 @@
+:root {
+  --c-neutral-900: rgb(3, 3, 3);
+  --c-neutral-400: rgb(106, 102, 98);
+  --c-neutral-200: rgb(255, 247, 240);
+  --c-neutral-0: rgb(255, 255, 255);
+
+  --c-red: rgb(255, 107, 91);
+  --c-blue: rgb(117, 92, 222);
+  --c-yellow: rgb(246, 165, 96);
+  --c-pink: rgb(243, 158, 158);
+  --c-cyan: rgb(97, 196, 183);
+  --c-purple: rgb(85, 32, 73);
+  --c-orange: rgb(236, 155, 86);
+}
+
+body {
+  background-color: var(--c-neutral-200);
+  color: var(--c-neutral-400);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--c-neutral-900);
+}
+
+.inverted {
+  background-color: var(--c-neutral-900);
+  color: var(--c-neutral-200);
+
+  .heading {
+    color: var(--c-neutral-200);
+  }
+}
+
+.button {
+  background-color: var(--c-red);
+  border: 1px solid transparent;
+  color: var(--c-neutral-200);
+
+  transition: background-color 0.3s;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--c-yellow);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--c-red);
+    outline-offset: 2px;
+  }
+
+  &.inverted {
+    background-color: var(--c-neutral-900);
+    border: 1px solid transparent;
+
+    color: var(--c-neutral-200);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--c-blue);
+      }
+    }
+
+    &:focus-visible {
+      outline-color: var(--c-blue);
+    }
+  }
+}
+
+button.inverted:not(:disabled) {
+  background-color: var(--c-neutral-900);
+
+  color: var(--c-neutral-200);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--c-blue);
+    }
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline-color: var(--c-blue);
+  }
+}
+
+.bg-blue {
+  background-color: var(--c-blue);
+}
+
+.bg-orange {
+  background-color: var(--c-orange);
+}
+
+.bg-pink {
+  background-color: var(--c-pink);
+}
+
+.bg-red {
+  background-color: var(--c-red);
+}
+
+.bg-cyan {
+  background-color: var(--c-cyan);
+}
+
+.bg-purple {
+  background-color: var(--c-purple);
+}
+
+.color-0 {
+  color: var(--c-neutral-0);
+}
